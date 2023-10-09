@@ -20,16 +20,16 @@ const Navbar = () => {
       {/* we can use useState in alot of clever ways */}
       <ul className="nav-menu">
         <li onClick={() => {setMenu("shop")}}>
-          <Link to='/'>Shop</Link> {menu === "shop" ? <hr />:<></>}
+          <Link to='/' style={{ textDecoration: 'none' }}>Shop</Link> {menu === "shop" ? <hr />:<></>}
         </li>
 
-        <li onClick={() => {setMenu("men")}}><Link to='/mens'>Men</Link> 
+        <li onClick={() => {setMenu("men")}}><Link to='/mens' style={{ textDecoration: "none" }}>Men</Link> 
         {menu === 'men' ? <hr />:<></>}</li>
 
-        <li onClick={() => {setMenu("women")}}><Link to='/womens'>Women</Link>
+        <li onClick={() => {setMenu("women")}}><Link to='/womens' style={{ textDecoration: 'none' }}>Women</Link>
         {menu === 'women' ? <hr />:<></>}</li>
 
-        <li onClick={() => {setMenu("kids")}}><Link to='/kids'>Kids</Link>
+        <li onClick={() => {setMenu("kids")}}><Link to='/kids' style={{ textDecoration: 'none' }}>Kids</Link>
         {menu === 'kids' ? <hr />:<></>}</li>
       </ul>
       {/* login button */}
